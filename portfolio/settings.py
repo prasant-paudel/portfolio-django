@@ -25,7 +25,7 @@ SECRET_KEY = '(adivq*yv87@7oda29fk+=!wqhhy*1za)!nr*co0c$=8c+u$^z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['prash-profile.herokuapp.com/', 'herokuapp.com']
+ALLOWED_HOSTS = ['prash-profile.herokuapp.com', 'herokuapp.com']
 
 
 # Application definition
