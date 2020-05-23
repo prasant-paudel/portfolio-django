@@ -17,6 +17,7 @@
 
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
+    <link href="{% static 'css/home.css' %}" rel="stylesheet">
   </head>
 
   <body>
@@ -47,7 +48,7 @@
                 <div class="card mb-4 box-shadow">
                   <img class="card-img-top" src="{{ job.image.url }}">
                   <div class="card-body">
-                    <p class="card-text"> {{ job.summary }} </p>
+                    <p class="card-text"> {{ job.name }} </p>
                   </div>
                 </div>
               </a>
