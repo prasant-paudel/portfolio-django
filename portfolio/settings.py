@@ -25,8 +25,7 @@ SECRET_KEY = '(adivq*yv87@7oda29fk+=!wqhhy*1za)!nr*co0c$=8c+u$^z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['prash-profile.herokuapp.com', 'herokuapp.com']
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -38,14 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'jobs',
-    'storages'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-
-    'whitenoise.middleware.WhiteNoiseMiddleware',
-
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -78,6 +73,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+<<<<<<< HEAD
 # Database for my local PC
 # DATABASES = {
 #     'default': {
@@ -93,15 +89,10 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # Database configuration for Heroku
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ddvb82naetng7g',
-        'USER': 'waywccsfkmkydy',
-        'PASSWORD': '582beaefdaa433794ca1f6cc14fbe924e6632a8a4003f9caddc8700b23830a9c',
-        'HOST': 'ec2-34-195-169-25.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 
 # Password validation
